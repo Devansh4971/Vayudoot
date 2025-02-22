@@ -11,7 +11,7 @@ interface TimelinePoint {
     description: string
     image: string
 }
-const [windowWidth, setWindowWidth] = useState(0);
+
 const timelineData: TimelinePoint[] = [
     {
         id: 1,
@@ -75,6 +75,7 @@ function TimelineCard({
 }
 
 function Timeline() {
+    const [windowWidth, setWindowWidth] = useState(0);
     useEffect(() => {
         if (typeof window !== "undefined") {
             setWindowWidth(window.innerWidth);
@@ -200,8 +201,8 @@ function Timeline() {
                                     key={point.id}
                                     className="absolute group"
                                     style={{
-                                        left: window.innerWidth < 640 ? "50%" : positions[index].left,
-                                        top: window.innerWidth < 640 ? mobilePosition : positions[index].top,
+                                        left: windowWidth < 640 ? "50%" : positions[index].left,
+                                        top: windowWidth < 640 ? mobilePosition : positions[index].top,
                                         transform: "translate(-50%, -50%)",
                                     }}
                                     variants={itemVariants}
