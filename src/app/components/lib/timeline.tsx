@@ -1,5 +1,6 @@
 "use client"
 
+
 import { useState, useEffect, useRef } from "react"
 import { motion, useAnimation } from "framer-motion"
 
@@ -10,7 +11,7 @@ interface TimelinePoint {
     description: string
     image: string
 }
-
+const [windowWidth, setWindowWidth] = useState(0);
 const timelineData: TimelinePoint[] = [
     {
         id: 1,
@@ -74,6 +75,16 @@ function TimelineCard({
 }
 
 function Timeline() {
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setWindowWidth(window.innerWidth);
+
+            const handleResize = () => setWindowWidth(window.innerWidth);
+            window.addEventListener("resize", handleResize);
+
+            return () => window.removeEventListener("resize", handleResize);
+        }
+    }, []);
     const [activePoint, setActivePoint] = useState<number | null>(null)
     const controls = useAnimation()
     const timelineRef = useRef<HTMLDivElement>(null)
