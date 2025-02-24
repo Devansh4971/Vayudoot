@@ -1,5 +1,7 @@
 "use client"
 import { Info } from "lucide-react"
+import GradientText from "../heading/heading"
+import AutoPlayVideo from "../vid/AutoPlayVideo"
 
 export default function Hero() {
     return (
@@ -7,34 +9,37 @@ export default function Hero() {
             <div className="container mx-auto px-4">
                 <section className="pt-10 font-inter">
                     <section className="mb-16 md:mb-24">
-                        <div className="text-center">
-                            <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-white pt-5 font-Manrope">
-                                VAYUDOOT
-                            </h1>
-                        </div>
-                        <div className="mt-8 md:mt-10 max-w-3xl mx-auto">
-                            <p className="font-inter font-semibold text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed">
-                                Our mission is to inspire and equip the next generation of engineers and innovators to push the
-                                boundaries of drone technology. Through hands-on competition, collaboration, and real-world
-                                problem-solving, we aim to foster creativity, technical excellence, and a spirit of innovation.
-                            </p>
-                        </div>
+                       <section className="space-y-1">
+                            <div className="text-center">
+                                <GradientText></GradientText>
+                            </div>
+                            <div className="mt-2 md:mt-10 max-w-3xl mx-auto">
+                                <p className="font-inter font-semibold text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed">
+                                    Our mission is to inspire and equip the next generation of engineers and innovators to push the
+                                    boundaries of drone technology. Through hands-on competition, collaboration, and real-world
+                                    problem-solving, we aim to foster creativity, technical excellence, and a spirit of innovation.
+                                </p>
+                            </div>
+                       </section>
                         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-10">
                             
                             <button
-                                onClick={(e) => window.open("/dummy.pdf", "_blank")}
+                                onClick={(e) => window.open("/rulebook.pdf", "_blank")}
                                 className="w-full px-[7rem] sm:w-auto  py-3 font-bold text-xl  rounded-md bg-white text-black hover:bg-gray-200 transition-colors"
                             >
                                 Rulebook
                             </button>
                         </div>
                     </section>
+                    <section className="rounded-md md:mb-[10rem]">
+                        <AutoPlayVideo src="/teaser.mp4"></AutoPlayVideo>
+                    </section>
 
                     <section className="mb-16 md:mb-24">
                         <div className="max-w-7xl mx-auto">
                             <div className="flex items-center gap-2 mb-8">
                                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider">IMPACT BY THE NUMBERS</h2>
-                                <Info className="w-6 h-6 text-blue-600" />
+                                
                             </div>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
@@ -45,7 +50,7 @@ export default function Hero() {
                                     { value: "10+", label: "SPONSORS" },
                                     { value: "30", label: "STATES" },
                                 ].map((item, index) => (
-                                    <div key={index} className="space-y-2">
+                                    <div key={index} className="space-y-2 ">
                                         <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-600">{item.value}</div>
                                         <div className="text-lg sm:text-xl md:text-2xl font-bold tracking-wider">{item.label}</div>
                                     </div>

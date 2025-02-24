@@ -71,7 +71,7 @@ export default function CountdownTimer() {
                         className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 pt-4 sm:pt-6 md:pt-8"
                         id="headline"
                     >
-                        Forms are live for:
+                        Forms are live for
                     </h1>
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 text-center" id="countdown">
                         {[
