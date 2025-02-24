@@ -22,16 +22,16 @@ const timelineData: TimelinePoint[] = [
     },
     {
         id: 2,
-        title: "",
-        period: "",
-        description: "",
-        image: "",
+        title: " Main Competition",
+        period: "18 April - 19 April",
+        description: "Main days of competition",
+        image: "/competition.jpg",
     },
     {
         id: 3,
-        title: "",
-        period: "",
-        description: "",
+        title: "Result",
+        period: "18 April - 19 April",
+        description: "Results are anounced",
         image: "",
     },
     

@@ -37,7 +37,7 @@ const Navbar = () => {
                             ))}
                         </div>
                         <div className='w-[30%]'>
-                            <button onClick={(e)=>Router.push("/Register")} className="bg-white text-black flex items-center justify-center  font-bold ml-[5rem]  text-[1.3rem] px-14 py-2 rounded-md hover:bg-gray-500 transition-colors duration-200">
+                            <button onClick={(e)=>Router.push("/register")} className="bg-white text-black flex items-center justify-center  font-bold ml-[5rem]  text-[1.3rem] px-14 py-2 rounded-md hover:bg-gray-500 transition-colors duration-200">
                                 Register
                             </button>
                         </div>

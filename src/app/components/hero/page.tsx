@@ -1,7 +1,7 @@
 "use client"
 
 import GradientText from "../heading/heading"
-import AutoPlayVideo from "../vid/AutoPlayVideo"
+
 
 export default function Hero() {
     return (
