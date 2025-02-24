@@ -23,7 +23,7 @@ export default function CountdownTimer() {
                 mm = String(today.getMonth() + 1).padStart(2, "0"),
                 yyyy = today.getFullYear(),
                 nextYear = yyyy + 1,
-                dayMonth = "03-15", // Use ISO-compliant format
+                dayMonth = "04-05", // Use ISO-compliant format
                 birthday = `${yyyy}-${dayMonth}`
 
             today = new Date(`${yyyy}-${mm}-${dd}`) // Ensure today is a Date object

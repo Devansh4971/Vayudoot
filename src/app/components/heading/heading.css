@@ -38,7 +38,7 @@
     margin-top: 20px;
 }
 
-/* Keyframe animation */
+/* Keyframe animation
 @keyframes animate {
     100% {
         background-position: 400%;
@@ -46,7 +46,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .backg {
         height: 40vh;
     }
@@ -58,9 +58,9 @@
     .timer {
         font-size: 5vw;
     }
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .backg {
         height: 30vh;
     }
@@ -72,4 +72,4 @@
     .timer {
         font-size: 6vw;
     }
-}
+}  */

@@ -1,33 +1,36 @@
+"use client"
 import Footer from '../footer/page';
 import Navbar from '../navbar/page';
 import SponsorCard from './sponsercard';
+import { useRouter } from 'next/navigation';
 const sponsors = [
     {
-        name: 'Ministry of Electronic and Information Technology',
-        imageUrl:'/electronic.png',
+        name: 'AICTE-IDEA Lab',
+        imageUrl:'/idea.png',
         websiteUrl: 'https://www.meity.gov.in/',
-        description: 'Supporting Partner'
+        
     },
     {
         name: 'MeitY Startup Hub',
         imageUrl:'/startup.png',
         websiteUrl: 'https://www.meity.gov.in/',
-        description: 'Supporting Partner'
+        
     },
     {
         name: 'StartinUP',
         imageUrl:'/up.png',
         websiteUrl: 'https://startinup.up.gov.in/',
-        description: 'Supporting Partner'
+        
     },
     {
         name: 'DST Nidhi',
         imageUrl: '/dst.png',
         websiteUrl: 'https://nidhi.dst.gov.in/',
-        description: 'Supporting Partner'
+        
     }
 ];
 export default function sponser() {
+    const Router=useRouter();
     return (
         <main>
             <div>
@@ -36,11 +39,11 @@ export default function sponser() {
                 </section>
                 <section className='w-full h-[45vh] flex mt-12 '>
                     <section className='w-[50%]  h-full flex  justify-center'>
-                        <h1 className='font-bold text-[3rem] pt-5 text-white font-Manrope'>Prize Partners</h1>
+                        <h1 className='font-bold text-[3rem] pt-5 text-white font-Manrope'> Partners</h1>
                     </section>
                     <section className='w-[50%]  h-full flex  justify-center'>
                         <p className='font-light max-sm:hidden shrink text-[1.5rem] pt-5 text-white font-manrope pr-10'>
-                            Our generous Partners and Benefactors support each competition by providing prize purse and operational funding as well as contributing mentorship and industry knowledge.
+                            Our generous Partners and Benefactors support each competition by providing prize pool and operational funding as well as contributing mentorship and industry knowledge.
                         </p>
 
                     </section>
@@ -57,7 +60,7 @@ export default function sponser() {
                                         name={sponsor.name}
                                         imageUrl={sponsor.imageUrl}
                                         websiteUrl={sponsor.websiteUrl}
-                                        description={sponsor.description}
+                                        
                                     />
                                 ))}
                             </div>
@@ -69,7 +72,7 @@ export default function sponser() {
                     
                 </section>
                 <section className='flex items-center mb-[2rem] justify-center mt-6'>
-                    <button className="h-[3rem] w-[25rem] font-bold text-xl rounded-md flex items-center justify-center p-5 bg-white text-black">
+                    <button onClick={(e) => Router.push("https://forms.gle/u6tEcAjQFYovdiHS7")} className="h-[3rem] w-[25rem] font-bold text-xl rounded-md flex items-center justify-center p-5 bg-white text-black">
                         Partner with Us
                     </button>
                 </section>

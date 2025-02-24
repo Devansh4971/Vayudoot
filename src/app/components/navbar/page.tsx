@@ -7,9 +7,11 @@ const Navbar = () => {
     const Router = useRouter();
     const menuItems = [
         { title: 'Overview', href: '/components/overview' },
-        { title: 'Guidelines', href: '/components/guidelines' },
-        { title: 'News', href: '/components/news' },
         { title: 'Partners', href: '/components/sponsers' },
+        { title: 'Guidelines', href: '/components/guidelines' },
+        {title:"Legacy",href:"/components/legacy"},
+        { title: 'News', href: '/components/news' },
+        
     ];
 
     return (
@@ -23,7 +25,7 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center w-[80%] justify-between">
-                        <div className='w-[50%] ml-[2.5%] flex justify-between'>
+                        <div className='w-[60%] ml-[3.5%] flex justify-between'>
                             {menuItems.map((item) => (
                                 <a
                                     key={item.title}
@@ -35,7 +37,7 @@ const Navbar = () => {
                             ))}
                         </div>
                         <div className='w-[30%]'>
-                            <button className="bg-white text-black flex items-center justify-center  font-bold ml-[5rem]  text-[1.3rem] px-14 py-2 rounded-md hover:bg-gray-500 transition-colors duration-200">
+                            <button onClick={(e)=>Router.push("/Register")} className="bg-white text-black flex items-center justify-center  font-bold ml-[5rem]  text-[1.3rem] px-14 py-2 rounded-md hover:bg-gray-500 transition-colors duration-200">
                                 Register
                             </button>
                         </div>
@@ -81,7 +83,7 @@ const Navbar = () => {
                             </a>
                         ))}
                         <button className="mt-6 bg-white text-black text-xl font-bold px-6 py-3 rounded-md hover:bg-blue-700 transition-colors duration-200">
-                            Get Involved
+                            Register
                         </button>
                     </div>
                 </div>

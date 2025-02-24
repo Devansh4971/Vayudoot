@@ -17,14 +17,14 @@ const judges = [
         image:"/ap.jpeg"
     },
     {
-        name: "Dr. Stuart Davies",
-        title: "Director, Center for Tropical Forest Science-Forest Global Earth Observatory at the Smithsonian Institution",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        name: "Dr. R.S. Raman",
+        title: "HOD,Mechanical Engineering Department",
+        image: "/hod-mech.jpg"
     },
     {
-        name: "Dr. Lucia Lohmann",
-        title: "Executive Director, Association for Tropical Biology and Conservation",
-        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        name: " Dr. Abhishek Saxena",
+        title: "Associate Professor",
+        image: "/saxena.jpg"
     }
 ];
 
@@ -38,6 +38,22 @@ export default function Overview() {
             
 
             {/* Explore Section */}
+            <section>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl mt-4 font-bold py-8 text-center text-gray-300">
+                    Organized by
+                </h1>
+                <DirectorMessage
+                    imageUrl="/abes.png"
+                    message="Equipped with many ‘Centers of Excellence’, the college encourages its students to participate in a creative exploration of knowledge involving hands-on activities, which provide ‘learning by doing’, an environment far different from exam-centric rote learning. "
+
+                />
+                
+
+
+
+            </section>
+           
+
             <section className="w-full px-4 md:px-8 lg:px-0 py-8 md:py-10 lg:h-[40vh] flex flex-col lg:flex-row">
                 <section className="w-full font-inter lg:w-[30%] max-sm:space-y-2 leading-8 lg:ml-[10rem] mb-8 lg:mb-0">
                     <p className="font-bold text-2xl max-sm:text-[3rem] md:text-3xl lg:text-[3rem] pt-4 md:pt-[2.5rem]">EXPLORE.</p>
@@ -50,10 +66,10 @@ export default function Overview() {
                         <p className="font-bold max-sm:text-[3rem] text-3xl md:text-4xl lg:text-[4rem] pt-2 md:pt-[1.5rem]">₹50,000</p>
                     </div>
                     <div>
-                        <p className="mt-7 text-gray-400 font-bold text-xl md:text-[1.5rem] pl-2 md:pl-[1.5rem]">Prize Pool</p>
+                        <p className="mt-7 text-gray-400 font-bold text-xl md:text-[2rem] pl-2 md:pl-[1.5rem]">Prize Pool</p>
                     </div>
                     <div>
-                        <p className="font-syncopate   text-gray-400  md:text-base pl-2 md:pl-[1.5rem] mt-4">
+                        <p className="font-syncopate  md:text-[1.55rem] leading-8 text-gray-400  md:text-base pl-2 md:pl-[1.5rem] mt-4">
                             The 50,000 Vayudoot is two-month competition with the goal of making breakthrough in the design and development of the Drones.
                         </p>
                     </div>
@@ -96,15 +112,16 @@ export default function Overview() {
                 <CountdownTimer></CountdownTimer>
             </section>
             {/* director testimony */}
-            <section>
+            <section className='space-y-1'>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl mt-4 font-bold py-8 text-center text-gray-300">
                     Message from the Director
                 </h1>
                 <DirectorMessage
-                    imageUrl="/placeholder.svg?height=320&width=320"
-                    message="Education is the passport to the future, for tomorrow belongs to those who prepare for it today. At our college, we strive to empower our students with knowledge, skills, and values that will help them shape a better world."
-                    directorName="Dr. XYZ"
+                    imageUrl="/director.jpg"
+                    message="This event showcases our dedication to cutting-edge technology, providing a platform for aspiring minds to push the limits of aerial robotics. We look forward to witnessing groundbreaking innovations and teamwork that will shape the future of drone technology. Best wishes to all participants—may your drones soar to new heights!"
+                    
                 />
+                <p className='text-right pr-[5rem]'>Director,ABES Engineering College</p>
 
 
 

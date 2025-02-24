@@ -24,7 +24,7 @@ const GradientText: React.FC = () => {
         <div className="backg">
             {/* <img src="./logo.jpeg" alt="logo" width={200} height={100}/>  */}
             <div className="content">
-                <h1 className="text">Vayudoot 25</h1>
+                <h1 className="text">Vayudoot 2025</h1>
                 
             </div>
         </div>

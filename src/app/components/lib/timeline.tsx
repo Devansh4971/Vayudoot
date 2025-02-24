@@ -160,11 +160,9 @@ function Timeline() {
                 variants={containerVariants}
             >
                 <motion.h1 className="text-4xl sm:text-7xl font-bold text-white mb-2" variants={itemVariants}>
-                    Journey
+                    Roadmap
                 </motion.h1>
-                <motion.p className="text-gray-400 mb-16" variants={itemVariants}>
-                    Discover journey of vayudoot so far.
-                </motion.p>
+                
 
                 {/* Timeline Container */}
                 <div className="relative">
