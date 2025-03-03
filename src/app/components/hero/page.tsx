@@ -24,7 +24,7 @@ export default function Hero() {
                         <div className="flex flex-col sm:flex-row justify-center items-center  sm:space-y-0 sm:space-x-4 ">
                             
                             <button
-                                onClick={(e) => window.open("/rulebook-fin.pdf", "_blank")}
+                                onClick={(e) => window.open("/R1.pdf", "_blank")}
                                 className="w-full px-[7rem] sm:w-auto  py-3 font-bold text-xl  rounded-md bg-white text-black hover:bg-gray-200 transition-colors"
                             >
                                 Rulebook

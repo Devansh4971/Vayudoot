@@ -102,7 +102,7 @@ export default function guidelines() {
                     <p className="md:pr-[10rem] shrink font-xl">The  <a onClick={(e)=>window.open("/dummy.pdf","_blank")} className="font-bold">Rulebook</a> is attached in the given pdf.  Please make sure to read the attached documents carefully before the competition. Failure to comply with the rules may result in penalties or disqualification.</p>
                     <section className="flex space-x-10 mt-10 mb-[5rem]">
                         
-                        <button onClick={(e)=>window.open("/rulebook.pdf","_blank")}className="h-[3rem] w-[25rem] font-bold text-xl rounded-md flex items-center justify-center p-5 bg-white text-black">
+                        <button onClick={(e)=>window.open("/R1","_blank")}className="h-[3rem] w-[25rem] font-bold text-xl rounded-md flex items-center justify-center p-5 bg-white text-black">
                             Rulebook
                         </button>
                     </section>

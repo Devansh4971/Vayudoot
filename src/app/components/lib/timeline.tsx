@@ -32,7 +32,7 @@ const timelineData: TimelinePoint[] = [
         title: "Result",
         period: "18 April - 19 April",
         description: "Results are anounced",
-        image: "",
+        image: "/winner.png",
     },
     
 ]
