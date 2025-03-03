@@ -82,7 +82,7 @@ const Navbar = () => {
                                 {item.title}
                             </a>
                         ))}
-                        <button className="mt-6 bg-white text-black text-xl font-bold px-6 py-3 rounded-md hover:bg-blue-700 transition-colors duration-200">
+                        <button onClick={(e) => Router.push("https://forms.gle/8uXKTbTn16oe9ftK6")} className="mt-6 bg-white text-black text-xl font-bold px-6 py-3 rounded-md hover:bg-blue-700 transition-colors duration-200">
                             Register
                         </button>
                     </div>

@@ -16,22 +16,22 @@ const legalLinks = [
 
 const socialLinks = [
     { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
+    { name: 'Twitter', icon: Twitter, href: 'https://x.com/i/flow/login?redirect_after_login=%2FVayudootabesec' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/vayudoot_abesec/?utm_source=qr&igsh=MWJ5cXFrYjNjc2UxOQ%3D%3D#' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/vayudoot-abesec' },
 
 ];
 export default function Footer() {
     return (
         <footer className="bg-black text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 {/* Main Navigation */}
-                <nav className="flex flex-wrap gap-x-8 mb-12">
+                <nav className="flex items-center justify-center flex-wrap gap-x-8 mb-12">
                     {navigation.map((item) => (
                         <a
                             key={item.name}
                             href={item.href}
-                            className="text-white hover:text-gray-300 transition-colors"
+                            className="text-white text-center hover:text-gray-300 transition-colors"
                         >
                             {item.name}
                         </a>
@@ -42,7 +42,7 @@ export default function Footer() {
                 <div className="border-t border-gray-800 mb-12"></div>
 
                 {/* Social Links */}
-                <div className="flex flex-wrap gap-8 mb-12">
+                <div className="flex justify-center flex-wrap gap-8 mb-12">
                     {socialLinks.map((item) => {
                         const Icon = item.icon;
                         return (
@@ -59,7 +59,7 @@ export default function Footer() {
                 </div>
 
                 {/* Legal Links */}
-                <div className="flex flex-wrap gap-8 mb-8">
+                <div className="flex justify-center flex-wrap gap-8 mb-8">
                     {legalLinks.map((item) => (
                         <a
                             key={item.name}
