@@ -9,8 +9,8 @@ const Navbar = () => {
         { title: 'Overview', href: '/components/overview' },
         { title: 'Partners', href: '/components/sponsers' },
         { title: 'Guidelines', href: '/components/guidelines' },
-        {title:"Legacy",href:"/components/legacy"},
         { title: 'News', href: '/components/news' },
+        {title:"About Us" , href:"/components/aboutus"}
         
     ];
 
