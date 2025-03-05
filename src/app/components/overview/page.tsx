@@ -25,6 +25,10 @@ const judges = [
         name: " Dr. Abhishek Saxena",
         title: "Associate Professor",
         image: "/saxena.jpg"
+    },{
+        name:"Rakesh Gupta",
+        title:"Orbits Consulting",
+        image:"/rakesh.jpg"
     }
 ];
 
@@ -140,7 +144,7 @@ export default function Overview() {
                                     <img
                                         src={judge.image}
                                         alt={judge.name}
-                                        className="w-full h-[280px] object-cover  hover:grayscale-0 transition-all duration-300"
+                                        className="w-full rounded-sm h-[280px] object-cover  hover:grayscale-0 transition-all duration-300"
                                     />
                                 </div>
                                 <h2 className="text-lg md:text-xl font-semibold mb-2">{judge.name}</h2>
