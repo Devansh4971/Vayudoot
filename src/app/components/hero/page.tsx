@@ -5,7 +5,7 @@ import GradientText from "../heading/heading"
 
 export default function Hero() {
     return (
-        <main className="bg-black text-white">
+        <main className="bg-black text-white xl:bg-black">
             <div className="container mx-auto px-4">
                 <section className=" font-inter">
                     <section className="mb-16 md:mb-12">

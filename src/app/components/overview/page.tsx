@@ -43,15 +43,17 @@ export default function Overview() {
 
             {/* Explore Section */}
             <section>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl mt-4 font-bold py-8 text-center text-gray-300">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl mt-4 font-bold font-inter py-8 text-center text-gray-300">
                     Organized by
                 </h1>
-                <DirectorMessage
-                    imageUrl="/abes.png"
-                    message="Equipped with many ‘Centers of Excellence’, the college encourages its students to participate in a creative exploration of knowledge involving hands-on activities, which provide ‘learning by doing’, an environment far different from exam-centric rote learning. "
-
-                />
-                
+                <section className='w-full mt-4 h-[20rem] flex '>
+                    <section className='w-[50%]  flex items-center justify-center'>
+                        <img  className="w-[50%] h-[50%]  rounded-sm" src="/logo-fin.png" alt="abes logo" />
+                    </section>
+                    <section className='font-inter w-[50%] text-[1.25rem] font-bold flex justify-center items-center text-center'>
+                        <p className='pr-[5rem] pl-[5rem]'>Equipped with many ‘Centers of Excellence’, the college encourages its students to participate in a creative exploration of knowledge involving hands-on activities, which provide ‘learning by doing’, an environment far different from exam-centric learning. </p>
+                    </section>
+                </section>
 
 
 
