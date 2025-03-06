@@ -71,9 +71,12 @@ export default function sponser() {
                     <p className='font-bold text-[3rem]'>Partner with Us</p>
                     
                 </section>
-                <section className='flex items-center mb-[2rem] justify-center mt-6'>
+                <section className='flex items-center mb-[2rem] gap-5 justify-center mt-6'>
                     <button onClick={(e) => Router.push("https://forms.gle/u6tEcAjQFYovdiHS7")} className="h-[3rem] w-[25rem] font-bold text-xl rounded-md flex items-center justify-center p-5 bg-white text-black">
-                        Partner with Us
+                        Become a sponsor
+                    </button>
+                    <button  onClick={(e)=>window.open("/Spon_brochure.pdf","blank")} className="h-[3rem] w-[25rem] font-bold text-xl rounded-md flex items-center justify-center p-5 bg-white text-black">
+                        Sponsership Brochure
                     </button>
                 </section>
                 <section>
