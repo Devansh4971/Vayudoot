@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 const sponsors = [
     {
         name: 'AICTE-IDEA Lab',
-        imageUrl:'/idea.png',
+        imageUrl:'/idea_lab1.png',
         websiteUrl: 'https://www.meity.gov.in/',
         
     },

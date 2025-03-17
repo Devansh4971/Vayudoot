@@ -1,11 +1,13 @@
 "use client"
 
 import GradientText from "../heading/heading"
+import { useRouter } from "next/navigation"
 
 
 export default function Hero() {
+    const Router = useRouter()
     return (
-        <main className="bg-black text-white xl:bg-black">
+        <main className="bg-black text-white xl:bg-black 2xl:bg-black">
             <div className="container mx-auto px-4">
                 <section className=" font-inter">
                     <section className="mb-16 md:mb-12">
@@ -15,19 +17,26 @@ export default function Hero() {
                                     <GradientText />
                                 </div>
                                 <div className="w-full text-center">
-                                    <p className="font-inter font-semibold text-gray-400 text-lg sm:text-xl md:text-2xl lg:text-4xl ">
-                                        Elevate the Game, Rule the Air!
+                                    <p className="font-inter font-semibold text-gray-400 text-lg sm:text-lg md:text-2xl lg:text-4xl ">
+                                        PAN India Drone Comepetition
                                     </p>
                                 </div>
+                                
                             </section>
                         </div>
-                        <div className="flex flex-col sm:flex-row justify-center items-center  sm:space-y-0 sm:space-x-4 ">
+                        <div className="flex flex-col gap-y-5 sm:flex-row justify-center items-center  sm:space-y-0 sm:space-x-4 ">
                             
                             <button
                                 onClick={(e) => window.open("/R1.pdf", "_blank")}
                                 className="w-full px-[7rem] sm:w-auto  py-3 font-bold text-xl  rounded-md bg-white text-black hover:bg-gray-200 transition-colors"
                             >
                                 Rulebook
+                            </button>
+                            <button
+                                onClick={(e) => Router.push("https://forms.gle/Y2YXGXPYFUwNuSzVA")}
+                                className="w-full px-[7rem] sm:w-auto  py-3 font-bold text-xl md:hidden lg:hidden rounded-md bg-white text-black hover:bg-gray-200 transition-colors"
+                            >
+                                Register
                             </button>
                         </div>
                     </section>
