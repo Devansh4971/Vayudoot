@@ -19,12 +19,12 @@ const judges = [
     {
         name: "Dr. R.S. Raman",
         title: "HOD,Mechanical Engineering Department",
-        image: "/hod-mech.jpg"
+        image: "/hodMech.jpg"
     },
     {
         name: " Dr. Abhishek Saxena",
         title: "Associate Professor",
-        image: "/saxena.jpg"
+        image: "/saxenaSir.jpg"
     },{
         name:"Rakesh Gupta",
         title:"Orbits Consulting",
@@ -43,24 +43,36 @@ export default function Overview() {
 
             {/* Explore Section */}
             <section>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl mt-4 font-bold font-inter py-8 text-center text-gray-300">
-                    Organized by
-                </h1>
-                <section className='w-full mt-4 h-[20rem] flex '>
-                    <section className='w-[50%]  flex items-center justify-center'>
-                        <img  className="w-[50%] h-[50%]  rounded-sm" src="/logo-fin.png" alt="abes logo" />
+                <div className=" bg-black">
+                    <section className="container mx-auto px-4 ">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-inter py-4 sm:py-6 lg:py-8 text-center text-gray-400">
+                            Organized by
+                        </h1>
+
+                        <div className="flex flex-col md:flex-row gap-8 mt-4">
+                            <div className="w-full md:w-1/2 flex items-center justify-center">
+                                <img
+                                    className="w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] h-auto object-contain rounded-sm"
+                                    src="/logo-fin.png"
+                                    alt="abes logo"
+                                />
+                            </div>
+
+                            <div className="w-full md:w-1/2 flex items-center text-gray-400 justify-center px-4 sm:px-6 md:px-8 lg:px-12">
+                                <p className="text-base sm:text-lg lg:text-xl font-bold font-inter text-center md:text-left">
+                                    Equipped with many 'Centers of Excellence', the college encourages its students to participate in a creative exploration of knowledge involving hands-on activities, which provide 'learning by doing', an environment far different from exam-centric learning.
+                                </p>
+                            </div>
+                        </div>
                     </section>
-                    <section className='font-inter w-[50%] text-[1.25rem] font-bold flex justify-center items-center text-center'>
-                        <p className='pr-[5rem] pl-[5rem]'>Equipped with many ‘Centers of Excellence’, the college encourages its students to participate in a creative exploration of knowledge involving hands-on activities, which provide ‘learning by doing’, an environment far different from exam-centric learning. </p>
-                    </section>
-                </section>
+                </div>
 
 
 
             </section>
            
 
-            <section className="w-full px-4 md:px-8 lg:px-0 py-8 md:py-10 lg:h-[40vh] flex flex-col lg:flex-row">
+            <section className="w-full sm:pt-10 px-4 md:px-8 lg:px-10 py-8 md:py-10 lg:h-[40vh] flex flex-col lg:flex-row">
                 <section className="w-full font-inter lg:w-[30%] max-sm:space-y-2 leading-8 lg:ml-[10rem] mb-8 lg:mb-0">
                     <p className="font-bold text-2xl max-sm:text-[3rem] md:text-3xl lg:text-[3rem] pt-4 md:pt-[2.5rem]">EXPLORE.</p>
                     <p className="font-bold text-2xl max-sm:text-[3rem] md:text-3xl lg:text-[3rem] pt-1 md:pt-[1.25rem]">INNOVATE.</p>
@@ -76,7 +88,7 @@ export default function Overview() {
                     </div>
                     <div>
                         <p className="font-syncopate  md:text-[1.55rem] leading-8 text-gray-400  md:text-base pl-2 md:pl-[1.5rem] mt-4">
-                            The 50,000 Vayudoot is two-month competition with the goal of making breakthrough in the design and development of the Drones.
+                             Vayudoot is two-month competition with the goal of making breakthrough in the design and development of the Drones.
                         </p>
                     </div>
                 </section>

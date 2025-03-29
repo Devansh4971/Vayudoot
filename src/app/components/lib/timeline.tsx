@@ -142,7 +142,7 @@ function Timeline() {
     }
 
     return (
-        <div ref={timelineRef} className="min-h-[40rem] mb-[5rem] bg-black relative overflow-hidden px-4 sm:px-0">
+        <div ref={timelineRef} className="min-h-[40rem] max-sm:min-h-[55rem] mb-[5rem] bg-black relative overflow-hidden px-4 sm:px-0">
             {/* Grid Background */}
             <div
                 className="absolute inset-0"

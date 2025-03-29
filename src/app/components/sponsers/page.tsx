@@ -50,7 +50,7 @@ export default function sponser() {
 
                 </section>
                 <section>
-                    <div className="min-h-screen  p-4 sm:p-6 md:p-8">
+                    <div className="min-h-screen py-2 p-4 sm:p-6 md:p-8">
                         <div className="max-w-6xl mx-auto">
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">

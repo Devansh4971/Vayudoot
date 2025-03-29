@@ -2,6 +2,7 @@
 
 import GradientText from "../heading/heading"
 import { useRouter } from "next/navigation"
+import { ClassValue } from 'clsx';
 
 
 export default function Hero() {
@@ -11,17 +12,18 @@ export default function Hero() {
             <div className="container mx-auto px-4">
                 <section className=" font-inter">
                     <section className="mb-16 md:mb-12">
-                        <div className="min-h-screen  flex items-center justify-center p-4">
+                        <div className="min-h-screen flex items-center justify-center p-4">
                             <section className="w-full max-w-4xl mx-auto space-y-4 sm:space-y-6">
                                 <div className="text-center">
-                                    <GradientText />
+                                    <h1 className="font-extrabold text-neutral-300 text-4xl sm:text-5xl md:text-6xl lg:text-8xl">
+                                        VAYUDOOT 2025
+                                    </h1>
                                 </div>
                                 <div className="w-full text-center">
-                                    <p className="font-inter font-semibold text-gray-400 text-lg sm:text-lg md:text-2xl lg:text-4xl ">
-                                        PAN India Drone Comepetition
+                                    <p className="font-inter font-semibold text-gray-400 text-base sm:text-lg md:text-2xl lg:text-4xl">
+                                        PAN India Drone Competition
                                     </p>
                                 </div>
-                                
                             </section>
                         </div>
                         <div className="flex flex-col gap-y-5 sm:flex-row justify-center items-center  sm:space-y-0 sm:space-x-4 ">
