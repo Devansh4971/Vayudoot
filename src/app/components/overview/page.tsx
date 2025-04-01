@@ -4,6 +4,7 @@ import Footer from "../footer/page";
 import Navbar from "../navbar/page";
 import DirectorMessage from './direc-msg';
 import CountdownTimer from '../lib/countdown';
+import  {useRouter}  from 'next/navigation';
 
 const judges = [
     {
@@ -33,6 +34,7 @@ const judges = [
 ];
 
 export default function Overview() {
+    const router= useRouter()
 
     return (
         <main className="overflow-x-hidden">
@@ -120,7 +122,7 @@ export default function Overview() {
                         We welcome teams throughout all the phases of the competition, whether you want to help recruit teams, support team's success, help scale winning solutions, or assist with testing operations.
                     </p>
                     <div className="pl-2 md:pl-[1.5rem] mt-6 md:mt-[2.5rem]">
-                        <button className="w-full md:w-[15rem] h-10 md:h-[2.5rem] flex items-center justify-center font-bold text-black hover:text-white bg-white hover:bg-blue-950 rounded-lg transition-colors">
+                        <button onClick={(e) => router.push("https://forms.gle/b9BKuYZ6NmG7gDQK6")} className="w-full md:w-[15rem] h-10 md:h-[2.5rem] flex items-center justify-center font-bold text-black hover:text-white bg-white hover:bg-blue-950 rounded-lg transition-colors">
                             Contact Us
                         </button>
                     </div>
