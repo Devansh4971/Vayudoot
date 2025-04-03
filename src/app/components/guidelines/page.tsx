@@ -26,9 +26,10 @@ export default function guidelines() {
                     </section>
                     <section className="w-[70%] ml-28 space-y-8 mt-5 text-gray-400   flex-col  justify-center">
                         <h2 className="font-semibold text-[1.5rem]">1. The competition is open to  teams (max 4-6 members)</h2>
-                        <h2 className="font-semibold text-[1.5rem]">2. Participants must be students of the college.</h2>
-                        <h2 className="font-semibold text-[1.5rem]">3. Teams must register before the deadline; late registrations will not be accepted.</h2>
-                        <h2 className="font-semibold text-[1.5rem]">4. Drones must be powered by electric motors only (no fuel-powered drones).</h2>
+                        <h2 className="font-semibold text-[1.5rem]">2. Registration Fee for each Team is Rs 5000</h2>
+                        <h2 className="font-semibold text-[1.5rem]">3. Participants must be students of the college.</h2>
+                        <h2 className="font-semibold text-[1.5rem]">4. Teams must register before the deadline; late registrations will not be accepted.</h2>
+                        <h2 className="font-semibold text-[1.5rem]">5. Drones must be powered by electric motors only (no fuel-powered drones).</h2>
 
                     </section>
 
