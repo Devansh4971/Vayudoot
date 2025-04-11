@@ -3,6 +3,23 @@ import Footer from '../footer/page';
 import Navbar from '../navbar/page';
 import SponsorCard from './sponsercard';
 import { useRouter } from 'next/navigation';
+const titleSponsor=[
+    {
+        name:"Ashirwad Group",
+        imageUrl:"/Ac.png",
+        websiteUrl:"https://www.ashirwadco2.com/"
+    }
+    
+]
+const coSponsor=[
+    
+        {
+        name: "Mitzwah",
+        imageUrl: "/mitzwahLogo.png",
+        websiteUrl: "https://mitzvah.in/"
+    }
+    
+]
 const sponsors = [
     {
         name: 'AICTE-IDEA Lab',
@@ -29,6 +46,9 @@ const sponsors = [
         
     }
 ];
+
+ 
+
 export default function sponser() {
     const Router=useRouter();
     return (
@@ -68,17 +88,50 @@ export default function sponser() {
                     </div>
                 </section>
                 <section className='flex items-center justify-center mt-[5rem]'>
-                    <p className='font-bold text-[3rem]'>Partner with Us</p>
+                    <p className='font-bold text-[3rem]'>Title Sponsor</p>
                     
                 </section>
-                <section className='flex items-center mb-[2rem] gap-5 justify-center mt-6'>
-                    <button onClick={(e) => Router.push("https://forms.gle/tUoUcttiYC8PqeXk7")} className="h-[3rem] w-[25rem] font-bold text-xl rounded-md flex items-center justify-center p-5 bg-white text-black">
-                        Become a sponsor
-                    </button>
-                    <button  onClick={(e)=>window.open("/Spon_brochure.pdf","blank")} className="h-[3rem] w-[25rem] font-bold text-xl rounded-md flex items-center justify-center p-5 bg-white text-black">
-                        Sponsership Brochure
-                    </button>
+                <section>
+                    <div className=" py-2 p-4 sm:p-6 md:p-8">
+                        <div className="max-w-6xl mx-auto">
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                                {titleSponsor.map((sponsor) => (
+                                    <SponsorCard
+                                        key={sponsor.name}
+                                        name={sponsor.name}
+                                        imageUrl={sponsor.imageUrl}
+                                        websiteUrl={sponsor.websiteUrl}
+
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </section>
+                <section className='flex items-center justify-center mt-[5rem]'>
+                    <p className='font-bold text-[3rem]'>Co Sponsor</p>
+
+                </section>
+                <section>
+                    <div className="min-h-screen py-2 p-4 sm:p-6 md:p-8">
+                        <div className="max-w-6xl mx-auto">
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                                {coSponsor.map((sponsor) => (
+                                    <SponsorCard
+                                        key={sponsor.name}
+                                        name={sponsor.name}
+                                        imageUrl={sponsor.imageUrl}
+                                        websiteUrl={sponsor.websiteUrl}
+
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
                 <section>
                     <Footer></Footer>
                 </section>
